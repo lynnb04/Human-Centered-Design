@@ -48,9 +48,16 @@ Testplan afmaken, prototypes uitwerken en testen
 ## Dinsdag 31/03
 
 ### Wat heb ik vandaag gedaan?
+Weekly Geek, ideeën gebrainstormed, testplan afgemaakt, getest bij de proefpersoon, checkout  
 
 ### Hoeveel tijd heeft me dat gekost?
+-   Weekly Geek: 1 uur
+-   Testplan afmaken: 2 uur
+-   Ideeën bedacht: 1 uur
+-   Testen: 2 uur
 
 ### Wat heb ik geleerd?
+Antwoorden op mijn vragen
 
 ### Wat ga ik morgen doen?
+Verschillende opties voor prototypes uitwerken en testen
