@@ -27,7 +27,7 @@ Een overzicht gemaakt van dingen om op te letten (bron: https://www.a11y-collect
 -	Skip-to-content links aan het begin van de pagina
 Testplan opgesteld voor morgen: wat ik wil weten van de testpersoon? + waarom wil ik dit weten?
 Vragen voor morgen:  
-![vragen voor test 1](vragen_test_1.png)
+![vragen voor test 1](../Human-Centered-Design/readme_images/vragen_test_1.png)
 Weekly Geek voorbereid  
 
 ### Hoeveel tijd heeft me dat gekost?
@@ -58,7 +58,7 @@ Weekly Geek, ideeën gebrainstormed, testplan afgemaakt, getest bij de proefpers
 
 ### Wat heb ik geleerd?
 Antwoorden op mijn vragen en héél veel over hoe Berend het web gebruikt.
-![inzichten uit test 1](inzichten_test_1.png)
+![inzichten uit test 1](../Human-Centered-Design/readme_images/inzichten_test_1.png)
 
 ### Wat ga ik morgen doen?
 Verschillende opties voor prototypes uitwerken en testen
