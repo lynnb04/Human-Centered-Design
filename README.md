@@ -25,9 +25,9 @@ Een overzicht gemaakt van dingen om op te letten (bron: https://www.a11y-collect
 -	Inputs, buttons en links hebben een label nodig of een omschrijving van wat het doet
 -	Visuele focus indicators
 -	Skip-to-content links aan het begin van de pagina
-Testplan opgesteld voor morgen: wat ik wil weten van de testpersoon?, kleine voorbeeld code om uit te proberen  
+Testplan opgesteld voor morgen: wat ik wil weten van de testpersoon? + waarom wil ik dit weten?
 Vragen voor morgen:  
-![vragen voor test in week 1](image.png)
+![vragen voor test 1](vragen_test_1.png)
 Weekly Geek voorbereid  
 
 ### Hoeveel tijd heeft me dat gekost?
@@ -57,7 +57,14 @@ Weekly Geek, ideeën gebrainstormed, testplan afgemaakt, getest bij de proefpers
 -   Testen: 2 uur
 
 ### Wat heb ik geleerd?
-Antwoorden op mijn vragen
+Antwoorden op mijn vragen en héél veel over hoe Berend het web gebruikt.
+![inzichten uit test 1](inzichten_test_1.png)
 
 ### Wat ga ik morgen doen?
 Verschillende opties voor prototypes uitwerken en testen
+
+---
+
+### Voortgangsgesprek
+Ik heb heel veel inzichten gehaald uit het testen deze week, veel dingen waar ik nog nooit bij stil had gestaan (zie de afbeelding bij Dinsdag 31/03 - Wat heb ik geleerd?). Een paar dingen die me vooral zijn bijgebleven zijn hoe snel hij zijn toetsenbord en screenreader gebruikt, dat hij pop-ups lastig kan navigeren, dat zijn achtergrond donker moet zijn met heel hoog contrast (bijvoorbeeld toepassen dat hetgene waar de screenreader op staat een felle kleur wordt, want ik zag dat hij wel op het scherm keek). Na de test hoorde ik hem nog zeggen: "ik wil niet dat een ziende mij vertelt wat ik moet doen". Ik denk dat dit misschien wel het belangrijkste is waar mijn werk aan moet voldoen, dat is mij heel erg bijgebleven.
+Volgende week ga ik verschillende opties aan Berend voorleggen, testen wat werkt en wat niet.
