@@ -68,3 +68,24 @@ Verschillende opties voor prototypes uitwerken en testen
 ### Voortgangsgesprek
 Ik heb heel veel inzichten gehaald uit het testen deze week, veel dingen waar ik nog nooit bij stil had gestaan (zie de afbeelding bij Dinsdag 31/03 - Wat heb ik geleerd?). Een paar dingen die me vooral zijn bijgebleven zijn hoe snel hij zijn toetsenbord en screenreader gebruikt, dat hij pop-ups lastig kan navigeren, dat zijn achtergrond donker moet zijn met heel hoog contrast (bijvoorbeeld toepassen dat hetgene waar de screenreader op staat een felle kleur wordt, want ik zag dat hij wel op het scherm keek). Na de test hoorde ik hem nog zeggen: "ik wil niet dat een ziende mij vertelt wat ik moet doen". Ik denk dat dit misschien wel het belangrijkste is waar mijn werk aan moet voldoen, dat is mij heel erg bijgebleven.
 Volgende week ga ik verschillende opties aan Berend voorleggen, testen wat werkt en wat niet.
+
+---
+
+## Dinsdag 07/04
+
+### Wat heb ik vandaag gedaan?
+Weekly Geek, test voorbereid en getest bij Berend.
+
+### Hoeveel tijd heeft me dat gekost?
+-   Weekly Geek: 1 uur
+-   Test voorbereiden: tot 12 uur
+-   Testen: 1,5 uur
+-   Readme updaten: half uur
+
+### Wat heb ik geleerd?
+Feedback op mijn test. Wat me vooral is bijgebleven is dat hij inzoomt tot 500%, dus de tekst moet écht heel groot. Hij zou het fijn vinden om tijdens het luisteren een stuk te kunnen arceren met de spatie toets, ik ga kijken of ik hier iets mee kan.
+
+### Wat ga ik de volgende les doen?
+Verder werken met nu echt het uiteindelijke prototype bouwen.
+
+![volledige testplan van week 2 met inzichten](test_week_2.png)
