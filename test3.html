@@ -14,78 +14,71 @@
             <h2 id="transcript-titel">Inkomend Spraakbericht (Transcriptie)</h2>
             <p>Dit bericht is opgesplitst per zin. Je kunt er direct een antwoord op typen en dit antwoord opslaan.</p>
             
-            <div id="zinnen-container" role="list">
+            <ul id="zinnen-container">
                 
-                <div class="zin-item" role="listitem">
-                    <p class="zin-tekst" tabindex="0">Hallo, dit is een testbericht.</p>
-                    <div class="antwoord-sectie">
+                <li class="zin-item">
+                    <p class="zin-tekst">Hallo, dit is een testbericht.</p>
+                    <form class="antwoord-sectie" onsubmit="event.preventDefault();">
                         <label for="antwoord-0">Jouw antwoord op deze zin:</label>
                         <textarea id="antwoord-0" rows="3" placeholder="Typ hier je antwoord..."></textarea>
-                        <div>
-                            <button class="opslaan-knop" data-index="0" aria-describedby="melding-0">Opslaan</button>
-                            <span id="melding-0" class="opgeslagen-melding" aria-live="polite"></span>
-                        </div>
-                    </div>
-                </div>
+                        <button class="opslaan-knop" type="button" data-index="0" aria-describedby="melding-0">Opslaan</button>
+                        <output id="melding-0" class="opgeslagen-melding"></output>
+                    </form>
+                </li>
 
-                <div class="zin-item" role="listitem">
-                    <p class="zin-tekst" tabindex="0">Ik hoop dat alles goed met je gaat.</p>
-                    <div class="antwoord-sectie">
+                <li class="zin-item">
+                    <p class="zin-tekst">Ik hoop dat alles goed met je gaat.</p>
+                    <form class="antwoord-sectie" onsubmit="event.preventDefault();">
                         <label for="antwoord-1">Jouw antwoord op deze zin:</label>
                         <textarea id="antwoord-1" rows="3" placeholder="Typ hier je antwoord..."></textarea>
-                        <div>
-                            <button class="opslaan-knop" data-index="1" aria-describedby="melding-1">Opslaan</button>
-                            <span id="melding-1" class="opgeslagen-melding" aria-live="polite"></span>
-                        </div>
-                    </div>
-                </div>
+                        <button class="opslaan-knop" type="button" data-index="1" aria-describedby="melding-1">Opslaan</button>
+                        <output id="melding-1" class="opgeslagen-melding"></output>
+                    </form>
+                </li>
 
-                <div class="zin-item" role="listitem">
-                    <p class="zin-tekst" tabindex="0">Zou je de documenten voor de vergadering van morgen kunnen opsturen?</p>
-                    <div class="antwoord-sectie">
+                <li class="zin-item">
+                    <p class="zin-tekst">Zou je de documenten voor de vergadering van morgen kunnen opsturen?</p>
+                    <form class="antwoord-sectie" onsubmit="event.preventDefault();">
                         <label for="antwoord-2">Jouw antwoord op deze zin:</label>
                         <textarea id="antwoord-2" rows="3" placeholder="Typ hier je antwoord..."></textarea>
-                        <div>
-                            <button class="opslaan-knop" data-index="2" aria-describedby="melding-2">Opslaan</button>
-                            <span id="melding-2" class="opgeslagen-melding" aria-live="polite"></span>
-                        </div>
-                    </div>
-                </div>
+                        <button class="opslaan-knop" type="button" data-index="2" aria-describedby="melding-2">Opslaan</button>
+                        <output id="melding-2" class="opgeslagen-melding"></output>
+                    </form>
+                </li>
 
-                <div class="zin-item" role="listitem">
-                    <p class="zin-tekst" tabindex="0">Laat me ook even weten of je de wekelijkse nieuwsbrief hebt ontvangen.</p>
-                    <div class="antwoord-sectie">
+                <li class="zin-item">
+                    <p class="zin-tekst">Laat me ook even weten of je de wekelijkse nieuwsbrief hebt ontvangen.</p>
+                    <form class="antwoord-sectie" onsubmit="event.preventDefault();">
                         <label for="antwoord-3">Jouw antwoord op deze zin:</label>
                         <textarea id="antwoord-3" rows="3" placeholder="Typ hier je antwoord..."></textarea>
-                        <div>
-                            <button class="opslaan-knop" data-index="3" aria-describedby="melding-3">Opslaan</button>
-                            <span id="melding-3" class="opgeslagen-melding" aria-live="polite"></span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+                        <button class="opslaan-knop" type="button" data-index="3" aria-describedby="melding-3">Opslaan</button>
+                        <output id="melding-3" class="opgeslagen-melding"></output>
+                    </form>
+                </li>
+            </ul>
         </section>
 
-        <hr>
+        <hr> <!-- thematic change -->
 
         <section aria-labelledby="zoek-titel">
             <h2 id="zoek-titel">Opgeslagen Antwoorden Zoeken</h2>
             <p>Typ een trefwoord in om te zoeken in de antwoorden die je hebt opgeslagen.</p>
             
-            <div class="zoek-container">
-                <label for="zoek-input">Zoek in antwoorden:</label>
-                <input type="text" id="zoek-input" aria-describedby="zoek-hulp">
-                <button id="zoek-knop">Zoeken</button>
-                <span id="zoek-hulp" class="sr-only">Voer een trefwoord in en klik op zoeken.</span>
-            </div>
+            <search>
+                <form class="zoek-container" onsubmit="event.preventDefault();">
+                    <label for="zoek-input">Zoek in antwoorden:</label>
+                    <input type="text" id="zoek-input" aria-describedby="zoek-hulp">
+                    <button id="zoek-knop" type="button">Zoeken</button>
+                    <span id="zoek-hulp" class="sr-only">Voer een trefwoord in en klik op zoeken.</span>
+                </form>
+            </search>
 
-            <div aria-live="polite">
+            <section aria-live="polite" aria-labelledby="zoekresultaten-titel">
                 <h3 id="zoekresultaten-titel">Zoekresultaten:</h3>
                 <ul id="zoekresultaten-lijst">
                     <li>Nog geen zoekopdracht uitgevoerd.</li>
                 </ul>
-            </div>
+            </section>
         </section>
 
     </main>

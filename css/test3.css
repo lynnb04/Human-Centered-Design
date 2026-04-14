@@ -26,6 +26,11 @@ hr {
     border-top: 4px solid #333;
 }
 
+#zinnen-container {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 .zin-item {
     background-color: #111;
     border-left: 10px solid #ccff00;
