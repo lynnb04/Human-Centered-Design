@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 500%;
+}
+
+main {
+    max-width: 95%;
+    margin: 0 auto;
+    background: #000;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: #fff;
+}
+
+hr {
+    margin: 40px 0;
+    border: 0;
+    border-top: 4px solid #333;
+}
+
+.zin-item {
+    background-color: #111;
+    border-left: 10px solid #ccff00;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.zin-tekst {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.acties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #ccff00;
+    color: #000;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #bbee00;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: 4px solid #555;
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+textarea:focus, input[type="text"]:focus {
+    border-color: #ccff00;
+    outline: none;
+}
+
+.antwoord-sectie {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.opgeslagen-melding {
+    color: #ccff00;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.zoek-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.zoek-container input {
+    width: 100%;
+}
+
+#zoekresultaten-lijst {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#zoekresultaten-lijst li {
+    background: #111;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 10px solid #ccff00;
+}
+
+.resultaat-origineel {
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.resultaat-antwoord {
+    font-weight: bold;
+    color: #ccff00;
+}
