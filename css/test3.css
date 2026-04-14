@@ -55,8 +55,8 @@ hr {
 }
 
 button {
-    background-color: #ccff00;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     border: none;
     padding: 15px 25px;
     border-radius: 8px;
@@ -66,7 +66,7 @@ button {
 }
 
 button:focus {
-    border: 20px solid #fff;
+    border: 20px solid #ccff00;
 }
 
 label {
