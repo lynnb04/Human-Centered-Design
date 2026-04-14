@@ -1,44 +1,88 @@
 <!DOCTYPE html>
 <html lang="nl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gebruikerstest van week 2</title>
-        <link rel="stylesheet" href="css/test2.css">
-    </head>
-    <body>
-        <main>
-            <h1>Een zin markeren als belangrijk</h1>
-            <!-- <p>Stel je voor dat iemand je een spraakbericht heeft gestuurd. Deze is voor nu een transcriptie.</p>
-
-            <p>Het spraakbericht gaat als volgt:</p>
-            <p>Hey, ik wilde even iets laten weten. Ik ga het vandaag helaas niet redden om langs te komen, er is iets tussengekomen op werk en het loopt allemaal wat uit. Misschien kunnen we het verzetten naar morgen of later deze week? Laat maar even weten wat jou uitkomt.</p> -->
-
-            <!-- <h2>Test 1: een korte samenvatting bij een spraakbericht</h2>
-            <p>Samenvatting van het bericht:</p>
-            <ul>
-                <li>
-                    De afspraak moet worden verzet naar morgen of later deze week. Laat weten wat voor jou uitkomt.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 3: Antwoorden per zin en opslaan</title>
+    <link rel="stylesheet" href="css/test3.css">
+</head>
+<body>
+    <main>
+        <h1>Test 3: Bericht beluisteren, beantwoorden en opslaan</h1>
+        
+        <section aria-labelledby="transcript-titel">
+            <h2 id="transcript-titel">Inkomend Spraakbericht (Transcriptie)</h2>
+            <p>Dit bericht is opgesplitst per zin. Je kunt er direct een antwoord op typen en dit antwoord opslaan.</p>
+            
+            <ul id="zinnen-container">
+                
+                <li class="zin-item">
+                    <p class="zin-tekst">Hallo, dit is een testbericht.</p>
+                    <form class="antwoord-sectie" onsubmit="event.preventDefault();">
+                        <label for="antwoord-0">Jouw antwoord op deze zin:</label>
+                        <textarea id="antwoord-0" rows="3" placeholder="Typ hier je antwoord..."></textarea>
+                        <button class="opslaan-knop" type="button" data-index="0" aria-describedby="melding-0">Opslaan</button>
+                        <output id="melding-0" class="opgeslagen-melding"></output>
+                    </form>
                 </li>
-            </ul> -->
 
-            <!-- <h2>Test 2: markeer een stuk als belangrijk</h2> -->
-            <p>
-                Selecteer een zin door op Enter of spatie te drukken. 
-                Geselecteerde zinnen verschijnen in de lijst daaronder.
-            </p>
+                <li class="zin-item">
+                    <p class="zin-tekst">Ik hoop dat alles goed met je gaat.</p>
+                    <form class="antwoord-sectie" onsubmit="event.preventDefault();">
+                        <label for="antwoord-1">Jouw antwoord op deze zin:</label>
+                        <textarea id="antwoord-1" rows="3" placeholder="Typ hier je antwoord..."></textarea>
+                        <button class="opslaan-knop" type="button" data-index="1" aria-describedby="melding-1">Opslaan</button>
+                        <output id="melding-1" class="opgeslagen-melding"></output>
+                    </form>
+                </li>
 
-            <ul id="zinnen">
-                <li><button aria-pressed="false">Hey, ik wilde even iets laten weten.</button></li>
-                <li><button aria-pressed="false">Ik ga het vandaag helaas niet redden om langs te komen, er is iets tussengekomen op werk en het loopt allemaal wat uit.</button></li>
-                <li><button aria-pressed="false">Misschien kunnen we het verzetten naar morgen of later deze week?</button></li>
-                <li><button aria-pressed="false">Laat maar even weten wat jou uitkomt.</button></li>
+                <li class="zin-item">
+                    <p class="zin-tekst">Zou je de documenten voor de vergadering van morgen kunnen opsturen?</p>
+                    <form class="antwoord-sectie" onsubmit="event.preventDefault();">
+                        <label for="antwoord-2">Jouw antwoord op deze zin:</label>
+                        <textarea id="antwoord-2" rows="3" placeholder="Typ hier je antwoord..."></textarea>
+                        <button class="opslaan-knop" type="button" data-index="2" aria-describedby="melding-2">Opslaan</button>
+                        <output id="melding-2" class="opgeslagen-melding"></output>
+                    </form>
+                </li>
+
+                <li class="zin-item">
+                    <p class="zin-tekst">Laat me ook even weten of je de wekelijkse nieuwsbrief hebt ontvangen.</p>
+                    <form class="antwoord-sectie" onsubmit="event.preventDefault();">
+                        <label for="antwoord-3">Jouw antwoord op deze zin:</label>
+                        <textarea id="antwoord-3" rows="3" placeholder="Typ hier je antwoord..."></textarea>
+                        <button class="opslaan-knop" type="button" data-index="3" aria-describedby="melding-3">Opslaan</button>
+                        <output id="melding-3" class="opgeslagen-melding"></output>
+                    </form>
+                </li>
             </ul>
+        </section>
 
-            <h3>Belangrijke zinnen:</h3>
-            <ul id="belangrijk" aria-live="polite"></ul>
+        <hr> <!-- thematic change -->
 
-        </main>
-        <script src="javascript/test2.js"></script>
-    </body>
+        <section aria-labelledby="zoek-titel">
+            <h2 id="zoek-titel">Opgeslagen Antwoorden Zoeken</h2>
+            <p>Typ een trefwoord in om te zoeken in de antwoorden die je hebt opgeslagen.</p>
+            
+            <search>
+                <form class="zoek-container" onsubmit="event.preventDefault();">
+                    <label for="zoek-input">Zoek in antwoorden:</label>
+                    <input type="text" id="zoek-input" aria-describedby="zoek-hulp">
+                    <button id="zoek-knop" type="button">Zoeken</button>
+                    <span id="zoek-hulp" class="sr-only">Voer een trefwoord in en klik op zoeken.</span>
+                </form>
+            </search>
+
+            <section aria-live="polite" aria-labelledby="zoekresultaten-titel">
+                <h3 id="zoekresultaten-titel">Zoekresultaten:</h3>
+                <ul id="zoekresultaten-lijst">
+                    <li>Nog geen zoekopdracht uitgevoerd.</li>
+                </ul>
+            </section>
+        </section>
+
+    </main>
+
+    <script src="javascript/test3.js"></script>
+</body>
 </html>
