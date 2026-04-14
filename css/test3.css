@@ -65,8 +65,8 @@ button {
     font-weight: bold;
 }
 
-button:hover {
-    background-color: #bbee00;
+button:focus {
+    border: 20px solid #fff;
 }
 
 label {
@@ -88,7 +88,7 @@ textarea, input[type="text"] {
 }
 
 textarea:focus, input[type="text"]:focus {
-    border-color: #ccff00;
+    border: 20px solid #ccff00;
     outline: none;
 }
 
