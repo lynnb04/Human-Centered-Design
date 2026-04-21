@@ -1,57 +1,70 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test 3: Antwoorden per zin en opslaan</title>
-    <link rel="stylesheet" href="css/test3.css">
+    <link rel="stylesheet" href="css/test4.css">
 </head>
+
 <body>
     <main>
-        <h1>Test 3: Bericht beluisteren, beantwoorden en opslaan</h1>
-        
+        <h1>Bericht beluisteren, beantwoorden en opslaan</h1>
+
         <section aria-labelledby="transcript-titel">
             <h2 id="transcript-titel">Inkomend Spraakbericht (Transcriptie)</h2>
-            <p>Dit bericht is opgesplitst per zin. Je kunt er direct een antwoord op typen en dit antwoord opslaan.</p>
-            
+            <p id="uitleg">Dit bericht is opgesplitst per zin. Je kunt er direct een antwoord op typen en dit antwoord
+                opslaan.</p>
+
             <ul id="zinnen-container">
-                
+
                 <li class="zin-item">
-                    <p class="zin-tekst">Hallo, dit is een testbericht.</p>
+                    <p class="zin-tekst" id="zin-0">Hallo, dit is een testbericht.</p>
                     <form class="antwoord-sectie" onsubmit="event.preventDefault();">
-                        <label for="antwoord-0">Jouw antwoord op deze zin:</label>
-                        <textarea id="antwoord-0" rows="3" placeholder="Typ hier je antwoord..."></textarea>
-                        <button class="opslaan-knop" type="button" data-index="0" aria-describedby="melding-0">Opslaan</button>
+                        <label for="antwoord-0">Typ hier jouw antwoord op deze zin:</label>
+                        <textarea id="antwoord-0" rows="3" placeholder="Typ hier je antwoord..."
+                            aria-describedby="zin-0 melding-0"></textarea>
+                        <button class="opslaan-knop" type="button" data-index="0"
+                            aria-describedby="melding-0">Opslaan</button>
                         <output id="melding-0" class="opgeslagen-melding"></output>
                     </form>
                 </li>
 
                 <li class="zin-item">
-                    <p class="zin-tekst">Ik hoop dat alles goed met je gaat.</p>
+                    <p class="zin-tekst" id="zin-1">Ik hoop dat alles goed met je gaat.</p>
                     <form class="antwoord-sectie" onsubmit="event.preventDefault();">
-                        <label for="antwoord-1">Jouw antwoord op deze zin:</label>
-                        <textarea id="antwoord-1" rows="3" placeholder="Typ hier je antwoord..."></textarea>
-                        <button class="opslaan-knop" type="button" data-index="1" aria-describedby="melding-1">Opslaan</button>
+                        <label for="antwoord-1">Typ hier jouw antwoord op deze zin:</label>
+                        <textarea id="antwoord-1" rows="3" placeholder="Typ hier je antwoord..."
+                            aria-describedby="zin-1 melding-1"></textarea>
+                        <button class="opslaan-knop" type="button" data-index="1"
+                            aria-describedby="melding-1">Opslaan</button>
                         <output id="melding-1" class="opgeslagen-melding"></output>
                     </form>
                 </li>
 
                 <li class="zin-item">
-                    <p class="zin-tekst">Zou je de documenten voor de vergadering van morgen kunnen opsturen?</p>
+                    <p class="zin-tekst" id="zin-2">Zou je de documenten voor de vergadering van morgen kunnen opsturen?
+                    </p>
                     <form class="antwoord-sectie" onsubmit="event.preventDefault();">
-                        <label for="antwoord-2">Jouw antwoord op deze zin:</label>
-                        <textarea id="antwoord-2" rows="3" placeholder="Typ hier je antwoord..."></textarea>
-                        <button class="opslaan-knop" type="button" data-index="2" aria-describedby="melding-2">Opslaan</button>
+                        <label for="antwoord-2">Typ hier jouw antwoord op deze zin:</label>
+                        <textarea id="antwoord-2" rows="3" placeholder="Typ hier je antwoord..."
+                            aria-describedby="zin-2 melding-2"></textarea>
+                        <button class="opslaan-knop" type="button" data-index="2"
+                            aria-describedby="melding-2">Opslaan</button>
                         <output id="melding-2" class="opgeslagen-melding"></output>
                     </form>
                 </li>
 
                 <li class="zin-item">
-                    <p class="zin-tekst">Laat me ook even weten of je de wekelijkse nieuwsbrief hebt ontvangen.</p>
+                    <p class="zin-tekst" id="zin-3">Laat me ook even weten of je de wekelijkse nieuwsbrief hebt
+                        ontvangen.</p>
                     <form class="antwoord-sectie" onsubmit="event.preventDefault();">
-                        <label for="antwoord-3">Jouw antwoord op deze zin:</label>
-                        <textarea id="antwoord-3" rows="3" placeholder="Typ hier je antwoord..."></textarea>
-                        <button class="opslaan-knop" type="button" data-index="3" aria-describedby="melding-3">Opslaan</button>
+                        <label for="antwoord-3">Typ hier jouw antwoord op deze zin:</label>
+                        <textarea id="antwoord-3" rows="3" placeholder="Typ hier je antwoord..."
+                            aria-describedby="zin-3 melding-3"></textarea>
+                        <button class="opslaan-knop" type="button" data-index="3"
+                            aria-describedby="melding-3">Opslaan</button>
                         <output id="melding-3" class="opgeslagen-melding"></output>
                     </form>
                 </li>
@@ -62,8 +75,8 @@
 
         <section aria-labelledby="zoek-titel">
             <h2 id="zoek-titel">Opgeslagen Antwoorden Zoeken</h2>
-            <p>Typ een trefwoord in om te zoeken in de antwoorden die je hebt opgeslagen.</p>
-            
+            <p id="zoek-uitleg">Typ een trefwoord in om te zoeken in de antwoorden die je hebt opgeslagen.</p>
+
             <search>
                 <form class="zoek-container" onsubmit="event.preventDefault();">
                     <label for="zoek-input">Zoek in antwoorden:</label>
@@ -83,6 +96,7 @@
 
     </main>
 
-    <script src="javascript/test3.js"></script>
+    <script src="javascript/test4.js"></script>
 </body>
+
 </html>

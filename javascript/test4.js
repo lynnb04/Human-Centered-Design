@@ -1,13 +1,24 @@
+// speel geluidje af bij succesvol opsturen
 let opgeslagenAntwoorden = [];
+
+const succesGeluid = new Audio("sounds/succes.wav");
+
+function speelSuccesGeluid() {
+    succesGeluid.currentTime = 0;
+    succesGeluid.play();
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const zoekKnop = document.getElementById("zoek-knop");
     const zoekInput = document.getElementById("zoek-input");
     const zoekresultatenLijst = document.getElementById("zoekresultaten-lijst");
 
+    // haal elementen uit de html (nu hardcoded)
     const zinElementen = document.querySelectorAll(".zin-tekst");
     const zinnen = Array.from(zinElementen).map(el => el.textContent);
 
+    // opslaan
     const opslaanKnoppen = document.querySelectorAll(".opslaan-knop");
     opslaanKnoppen.forEach(knop => {
         knop.addEventListener("click", (e) => {
@@ -21,7 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     origineleZin: zinnen[index],
                     antwoord: antwoordTekst
                 });
+
+                speelSuccesGeluid();
                 
+                // feedback voor screenreader
                 meldingVeld.textContent = "Antwoord succesvol opgeslagen.";
                 
                 setTimeout(() => {
@@ -36,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // zoeken in vragen + antwoorden
     const voerZoekopdrachtUit = () => {
         const query = zoekInput.value.toLowerCase().trim();
         zoekresultatenLijst.innerHTML = "";
@@ -45,19 +60,32 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        const resultaten = opgeslagenAntwoorden.filter(item => 
-            item.antwoord.toLowerCase().includes(query) || 
-            item.origineleZin.toLowerCase().includes(query)
-        );
+        // zoeken in alle vragen (ook niet beantwoordde vragen)
+        const resultaten = zinnen.reduce((acc, zin, index) => {
+            const opgeslagenAntwoord = opgeslagenAntwoorden
+                .filter(item => item.origineleZin === zin)
+                .map(item => item.antwoord);
+
+            const vraagMatch = zin.toLowerCase().includes(query);
+            const antwoordMatch = opgeslagenAntwoord.some(a => a.toLowerCase().includes(query));
+
+            if (vraagMatch || antwoordMatch) {
+                acc.push({ zin, antwoorden: opgeslagenAntwoord });
+            }
+            return acc;
+        }, []);
 
         if (resultaten.length === 0) {
             zoekresultatenLijst.innerHTML = "<li>Geen resultaten gevonden.</li>";
         } else {
             resultaten.forEach(item => {
                 const li = document.createElement("li");
+                const antwoordenTekst = item.antwoorden.length > 0
+                    ? item.antwoorden.map(a => `<span class="resultaat-antwoord">Antwoord: ${a}</span>`).join("")
+                    : `<span class="resultaat-geen-antwoord">Nog geen antwoord opgeslagen.</span>`;
                 li.innerHTML = `
-                    <span class="resultaat-origineel">Op: ${item.origineleZin}</span>
-                    <span class="resultaat-antwoord">Antwoord: ${item.antwoord}</span>
+                    <span class="resultaat-origineel">Vraag: ${item.zin}</span>
+                    ${antwoordenTekst}
                 `;
                 zoekresultatenLijst.appendChild(li);
             });

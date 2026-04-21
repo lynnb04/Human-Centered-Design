@@ -65,7 +65,7 @@ Verschillende opties voor prototypes uitwerken en testen
 
 ---
 
-### Voortgangsgesprek
+### Voortgangsgesprek 1
 Ik heb heel veel inzichten gehaald uit het testen deze week, veel dingen waar ik nog nooit bij stil had gestaan (zie de afbeelding bij Dinsdag 31/03 - Wat heb ik geleerd?). Een paar dingen die me vooral zijn bijgebleven zijn hoe snel hij zijn toetsenbord en screenreader gebruikt, dat hij pop-ups lastig kan navigeren, dat zijn achtergrond donker moet zijn met heel hoog contrast (bijvoorbeeld toepassen dat hetgene waar de screenreader op staat een felle kleur wordt, want ik zag dat hij wel op het scherm keek). Na de test hoorde ik hem nog zeggen: "ik wil niet dat een ziende mij vertelt wat ik moet doen". Ik denk dat dit misschien wel het belangrijkste is waar mijn werk aan moet voldoen, dat is mij heel erg bijgebleven.
 Volgende week ga ik verschillende opties aan Berend voorleggen, testen wat werkt en wat niet.
 
@@ -88,4 +88,26 @@ Feedback op mijn test. Wat me vooral is bijgebleven is dat hij inzoomt tot 500%,
 ### Wat ga ik de volgende les doen?
 Verder werken met nu echt het uiteindelijke prototype bouwen.
 
-![volledige testplan van week 2 met inzichten](test_week_2.png)
+![volledige testplan van week 2 met inzichten](readme_images/test_week_2.png)
+
+---
+
+### Voortgangsgesprek 2
+Niet te moeilijk denken met buttons, laat tekst als tekst, list items, ect. Checkboxes kunnen misschien handig zijn voor de zinnen. Idee laten zien is belangrijker dan dat het helemaal werkend is. Focussen op de volgende test, niet op het eindproduct. Ik ga me nu vooral focussen op het laten zien van mijn idee i.p.v. het helemaal perfect werkend maken. Alle aantekeningen die ik heb genomen tijdens de tests ga ik proberen te verwerken voor de laatste test.
+
+---
+
+## Maandag 20/04
+
+### Wat heb ik vandaag gedaan?
+Borders om de elementen heen gezet, kleuren aangepast, geluidje toegevoegd, zoeken in de antwoorden aangepast naar zoeken in alles en de voiceover functionaliteit verbeterd.
+
+### Hoeveel tijd heeft me dat gekost?
+-   Opmaak: tot 12u
+-   Functionele aanpassingen: 3 uur
+
+### Wat heb ik geleerd?
+Ik heb meer geleerd over hoe je om moet gaan met aria labels voor screenreader functionaliteit en javascript.
+
+### Wat ga ik de volgende les doen?
+Laatste keer testen
