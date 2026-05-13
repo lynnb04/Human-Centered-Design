@@ -27,7 +27,7 @@ Een overzicht gemaakt van dingen om op te letten (bron: https://www.a11y-collect
 -	Skip-to-content links aan het begin van de pagina
 Testplan opgesteld voor morgen: wat ik wil weten van de testpersoon? + waarom wil ik dit weten?
 Vragen voor morgen:  
-![vragen voor test 1](readme_images/vragen_test_1.png)  
+![Een overzicht van de vragen opgesteld voor de eerste gebruikerstest met Berend.](readme_images/vragen_test_1.png)  
 Weekly Geek voorbereid  
 
 ### Hoeveel tijd heeft me dat gekost?
@@ -58,7 +58,7 @@ Weekly Geek, ideeën gebrainstormed, testplan afgemaakt, getest bij de proefpers
 
 ### Wat heb ik geleerd?
 Antwoorden op mijn vragen en héél veel over hoe Berend het web gebruikt.
-![inzichten uit test 1](readme_images/inzichten_test_1.png)  
+![Aantekeningen met de belangrijkste inzichten na de eerste test met Berend.](readme_images/inzichten_test_1.png)  
 
 ### Wat ga ik morgen doen?
 Verschillende opties voor prototypes uitwerken en testen
@@ -75,6 +75,7 @@ Volgende week ga ik verschillende opties aan Berend voorleggen, testen wat werkt
 
 ### Wat heb ik vandaag gedaan?
 Weekly Geek, test voorbereid en getest bij Berend.
+![Foto van de tweede testsessie waarbij Berend het prototype gebruikt.](readme_images/test_week_2_sessie.png)
 
 ### Hoeveel tijd heeft me dat gekost?
 -   Weekly Geek: 1 uur
@@ -88,7 +89,7 @@ Feedback op mijn test. Wat me vooral is bijgebleven is dat hij inzoomt tot 500%,
 ### Wat ga ik de volgende les doen?
 Verder werken met nu echt het uiteindelijke prototype bouwen.
 
-![volledige testplan van week 2 met inzichten](readme_images/test_week_2.png)
+![Het volledige testplan voor week 2, inclusief de verzamelde inzichten en feedback van de gebruiker.](readme_images/test_week_2.png)
 
 ---
 
@@ -106,12 +107,16 @@ Thuis de test voor morgen voorbereid.
 
 ### Wat heb ik vandaag gedaan?
 Derde test gedaan. Daarna heb ik op school nog even verder gewerkt aan mijn blog.
+![Berend test de derde iteratie van het prototype op school.](readme_images/test_week_3_sessie.png)
+![Screenshot van de interface van de derde iteratie van het prototype.](readme_images/prototype_iteratie_3.png)
+![Visuele bevestiging in de interface dat een antwoord succesvol is opgeslagen.](readme_images/antwoord_opgeslagen.png)
+![Screenshot van de zoekfunctie waarmee in opgeslagen antwoorden gezocht kan worden.](readme_images/zoekfunctie_prototype.png)
 
 ### Hoeveel tijd heeft me dat gekost?
 -   Testen: 2 uur
 
 ### Wat heb ik geleerd?
-![testplan van test 3 met de inzichten](readme_images/test_week_3.png)
+![Gedetailleerd overzicht van het testplan voor de derde week met de bijbehorende leerpunten.](readme_images/test_week_3.png)
 Ik ga een border gebruiken om elementen te groeperen, zorgen dat de bijbehorende zin automatisch wordt voorgelezen als de textarea focus heeft, de zoekfunctie aanpassen op alle woorden i.p.v. alleen op de antwoorden en ik ga de kleuren iets aanpassen zodat het beter zichtbaar is voor hem.
 
 ### Wat ga ik de volgende les doen?
@@ -140,13 +145,18 @@ Laatste keer testen
 
 ### Wat heb ik vandaag gedaan?
 Laatste dingen afgemaakt van mijn prototype en toen getest.
+![Start van de laatste testronde waarbij Berend de vernieuwde interface bekijkt.](readme_images/test_week_4_start.png)
+![Screenshot van het invoerveld waar een antwoord op een specifieke zin getypt wordt.](readme_images/prototype_typen.png)
+![Melding in beeld dat het antwoord is opgeslagen, gecombineerd met een auditieve feedback.](readme_images/prototype_bevestiging.png)
+![De verbeterde zoekfunctie die nu zowel door vragen als antwoorden zoekt.](readme_images/prototype_zoeken_alles.png)
+![Resultaat van een zoekopdracht waarbij de relevante zin en het antwoord getoond worden.](readme_images/prototype_zoekresultaat.png)
 
 ### Hoeveel tijd heeft me dat gekost?
 -   Afronden: 1 uur
 -   Testen: 2 uur
 
 ### Wat heb ik geleerd?
-![aantekeningen van de laatste test](readme_images/test_week_4.png)
+![Eindnotities en conclusies van de laatste gebruikerstest, waaruit een positieve ervaring van Berend blijkt.](readme_images/test_week_4.png)
 Hij was heel positief over wat ik had gemaakt, daar ben ik heel blij mee.
 
 ### Wat ga ik de volgende les doen?

@@ -34,10 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
 
                 speelSuccesGeluid();
-                
+
                 // feedback voor screenreader
                 meldingVeld.textContent = "Antwoord succesvol opgeslagen.";
-                
+
                 setTimeout(() => {
                     meldingVeld.textContent = "";
                 }, 3000);
